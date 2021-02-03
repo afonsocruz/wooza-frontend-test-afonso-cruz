@@ -1,8 +1,12 @@
 import React from 'react';
 
+import { Wrapper } from '../../styles/globalStyle';
+
 function Checkout() {
   return (
-    <h1>Checkout</h1>
+    <Wrapper>
+      <h1>Checkout</h1>
+    </Wrapper>
   );
 }
 

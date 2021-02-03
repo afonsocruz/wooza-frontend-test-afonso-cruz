@@ -1,8 +1,14 @@
+import Routes from './routes';
+import GlobalStyle from './styles/globalStyle';
+import Navbar from './components/Navbar';
+
 function App() {
   return (
-    <div className="App">
-      <h1>Hello world</h1>
-    </div>
+    <>
+      <Navbar />
+      <Routes />
+      <GlobalStyle />
+    </>
   );
 }
 
