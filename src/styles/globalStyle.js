@@ -24,7 +24,7 @@ export const Wrapper = styled.div`
   margin: 0 auto;
 `
 
-export const Container = styled.div`
+export const CardBackgroundArea = styled.div`
   margin-top: 20px;
   background-color: #f7f7f7;
   width: 1170px;
@@ -33,6 +33,9 @@ export const Container = styled.div`
   box-shadow: -8px 6px 28px -3px rgba(0,0,0,0.64);
   -webkit-box-shadow: -8px 6px 28px -3px rgba(0,0,0,0.64);
   -moz-box-shadow: -8px 6px 28px -3px rgba(0,0,0,0.64);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `
 
 
