@@ -1,6 +1,7 @@
+/* eslint-disable react/prop-types */
 import { CardStyle, Container } from './styles';
 
-function Card(data, onClick) {
+function Card({ data, onClick }) {
 
   const { nome, descricao } = data;
 
@@ -15,7 +16,7 @@ function Card(data, onClick) {
 
 
   return (
-    <Container>
+    <Container onClick={onClick}>
       <CardStyle>
         <h4>{nome}</h4>
         {separateDescriptionPipe(descricao)}
