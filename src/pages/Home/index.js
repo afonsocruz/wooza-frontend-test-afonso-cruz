@@ -1,11 +1,19 @@
 import React from 'react';
 
-import { Wrapper } from '../../styles/globalStyle';
+import { Wrapper, Container } from '../../styles/globalStyle';
+
+import { HomeStyle } from './styles';
+
 
 function Home() {
   return (
   <Wrapper>
-    <h1>Home</h1>
+    <HomeStyle>
+     <h2>Escolha um serviço abaixo:</h2>
+     <Container>
+
+     </Container>
+    </HomeStyle>
   </Wrapper>
   )
 }

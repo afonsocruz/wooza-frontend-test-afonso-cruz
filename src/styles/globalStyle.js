@@ -15,13 +15,24 @@ export default createGlobalStyle`
   }
 
   body {
-    background: #9054ff;
+    background: #7588ff;
   }
 `
 export const Wrapper = styled.div`
   max-width: 1170px;
   width: 100%;
   margin: 0 auto;
+`
+
+export const Container = styled.div`
+  margin-top: 20px;
+  background-color: #f7f7f7;
+  width: 1170px;
+  height: 500px;
+  border-radius: 8px;
+  box-shadow: -8px 6px 28px -3px rgba(0,0,0,0.64);
+  -webkit-box-shadow: -8px 6px 28px -3px rgba(0,0,0,0.64);
+  -moz-box-shadow: -8px 6px 28px -3px rgba(0,0,0,0.64);
 `
 
 
