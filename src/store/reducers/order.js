@@ -1,9 +1,9 @@
 //Set INITIAL_STATE
 
 const INITIAL_STATE = {
-  isOrderInitialized: false,
+  orderInitialized: false,
   data: {
-    plataform: {
+    platform: {
       sku: null,
       nome: '',
     },
@@ -15,14 +15,13 @@ const INITIAL_STATE = {
       nome: '',
       email: '',
       cpf: '',
+      nascimento: '',
       telefone: '',
     },
   },
 };
 
-// order function
-
-const order = (state = INITIAL_STATE, action) => {
+function order(state = INITIAL_STATE, action) {
   switch (action.type) {
     case 'UPDATE_PLATFORM':
       return {
@@ -57,6 +56,6 @@ const order = (state = INITIAL_STATE, action) => {
     default:
       return state;
   }
-};
+}
 
 export default order;

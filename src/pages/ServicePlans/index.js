@@ -11,26 +11,13 @@ import CardWifi from '../../components/CardPc';
 function ServicePlans() {
 
   const order = useSelector((state) => state.order);
-
-  const { sku } = order.data.platform;
+  const { orderInitialized } = order;
+  const { sku } = useSelector((state) => state.order.data.platform);
 
   const [servicePlans, setServicePlans] = useState([]);
 
   const history = useHistory();
   const dispatch = useDispatch();
-
-  useEffect(() => {
-    api.get(`/planos/${sku}`)
-      .then((response) => {
-        const { planos } = response.data;
-        console.log(planos);
-        const planosAtivos = planos.filter((plano) => plano.ativo === true)
-        setServicePlans(planosAtivos);
-      })
-      .catch((err) => {
-        console.log(err);
-      })
-  }, [history, sku]);
 
   function handlePickPlan(data) {
     const { nome, valor, aparelho, franquia } = data;
@@ -39,7 +26,7 @@ function ServicePlans() {
     if (!aparelho) {
       dispatch({
         type: 'UPDATE_PLAN',
-        payload: {skuPlan, nome, valor, franquia, aparelho:false},
+        payload: {planSku, nome, valor, franquia, aparelho:false},
       });
       history.push(`/checkout`);
       return;
@@ -57,6 +44,19 @@ function ServicePlans() {
 
     history.push(`/checkout`);
   }
+
+  useEffect(() => {
+    api.get(`/planos/${sku}`)
+      .then((response) => {
+        const { planos } = response.data;
+        console.log(planos);
+        const planosAtivos = planos.filter((plano) => plano.ativo === true)
+        setServicePlans(planosAtivos);
+      })
+      .catch((err) => {
+        console.log(err);
+      })
+  }, [history, sku, orderInitialized]);
 
   function selectCard(plano, index) {
     switch (sku) {
