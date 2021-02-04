@@ -38,7 +38,7 @@ function order(state = INITIAL_STATE, action) {
         data: {
           ...state.data,
           plan: {
-            sku: action.payload.planSku,
+            sku: action.payload.skuPlan,
             franquia: action.payload.franquia,
             valor: action.payload.valor,
             aparelho: action.payload.aparelho,

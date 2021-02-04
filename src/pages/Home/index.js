@@ -31,7 +31,7 @@ function Home() {
       })
   })
 
-  const handlePickPlatform = (data) => {
+  function handlePickPlatform(data) {
     const { sku, nome } = data;
 
     dispatch({

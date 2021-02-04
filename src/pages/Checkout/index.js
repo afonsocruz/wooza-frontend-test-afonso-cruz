@@ -13,9 +13,9 @@ function Checkout() {
   const { orderInitialized } = order;
   const history = useHistory();
 
-  // if(!orderInitialized) {
-  //   history.push('/');
-  // }
+  if(!orderInitialized) {
+    history.push('/');
+  }
 
   return (
     <Wrapper>
