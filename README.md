@@ -32,7 +32,7 @@
 
 ### Project Screens
 
-![plot](./src/assets/insomnia.png)
+![plot](./src/assets/insomnia.PNG)
 
 ### Notes
 
