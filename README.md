@@ -6,6 +6,7 @@
 
 ### Created with:
 
+![Badge](https://img.shields.io/static/v1?label=&message=JavaScript&color=000&style=for-the-badge&logo=javascript)
 ![Badge](https://img.shields.io/static/v1?label=&message=React&color=000&style=for-the-badge&logo=react)
 ![Badge](https://img.shields.io/static/v1?label=&message=Redux&color=000&style=for-the-badge&logo=redux)
 ![Badge](https://img.shields.io/static/v1?label=&message=Insomnia&color=000&style=for-the-badge&logo=insomnia)
