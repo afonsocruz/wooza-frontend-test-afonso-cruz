@@ -28,6 +28,9 @@ export const Wrapper = styled.div`
   @media screen and (max-width: 789px) {
     max-width: 450px;
   }
+  @media screen and (max-width: 500px) {
+    max-width: 340px;
+  }
 `
 
 export const CardBackgroundArea = styled.div`
@@ -49,6 +52,9 @@ export const CardBackgroundArea = styled.div`
   @media screen and (max-width: 789px) {
     max-width: 450px;
     flex-direction: column;
+  }
+  @media screen and (max-width: 500px) {
+    max-width: 340px;
   }
 `
 
