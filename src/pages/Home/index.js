@@ -17,7 +17,7 @@ function Home() {
 
   const dispatch = useDispatch();
 
-  useEffect(() => {
+  function getData() {
     api.get('plataformas')
       .then((response) => {
         setPlatforms(response.data.plataformas);
@@ -25,7 +25,9 @@ function Home() {
       .catch((err) => {
         console.log(err);
       })
-  })
+    }
+
+
 
   function handlePickPlatform(data) {
     const { sku, nome } = data;
@@ -36,6 +38,10 @@ function Home() {
     });
     history.push(`/serviceplans/${sku}`)
   }
+
+  useEffect(() => {
+    getData();
+  }, [])
 
   return (
   <Wrapper>
