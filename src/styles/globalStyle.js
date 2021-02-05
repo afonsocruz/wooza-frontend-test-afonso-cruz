@@ -17,6 +17,10 @@ export default createGlobalStyle`
   body {
     background: #173F5F;
   }
+
+  h2 {
+    color: #FFF;
+  }
 `
 export const Wrapper = styled.div`
   max-width: 1170px;

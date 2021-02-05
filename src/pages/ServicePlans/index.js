@@ -88,6 +88,7 @@ function ServicePlans() {
     }
   return (
     <Wrapper>
+         <h2>Escolha o melhor plano para você!</h2>
       <CardBackgroundArea>
        <ServicePlansStyle>
         {servicePlans.map(selectCard)}
