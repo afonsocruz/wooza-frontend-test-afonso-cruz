@@ -32,7 +32,7 @@
 
 ### Project Screens
 
-![Insomnia app listing all endpoints](https://ibb.co/74wppKZ)
+![plot](./src/assets/insomnia.png)
 
 ### Notes
 
