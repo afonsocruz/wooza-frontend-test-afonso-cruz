@@ -10,11 +10,9 @@ import { Wrapper, CardBackgroundArea } from '../../styles/globalStyle';
 import api from '../../api/api';
 
 function Home() {
-
   const [platforms, setPlatforms] = useState([]);
 
   const history = useHistory();
-
   const dispatch = useDispatch();
 
   function getData() {
@@ -25,9 +23,7 @@ function Home() {
       .catch((err) => {
         console.log(err);
       })
-    }
-
-
+    };
 
   function handlePickPlatform(data) {
     const { sku, nome } = data;
@@ -37,11 +33,11 @@ function Home() {
       payload: { sku, nome },
     });
     history.push(`/serviceplans/${sku}`)
-  }
+  };
 
   useEffect(() => {
     getData();
-  }, [])
+  }, []);
 
   return (
   <Wrapper>

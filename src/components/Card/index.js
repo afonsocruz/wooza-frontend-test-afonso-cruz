@@ -2,18 +2,16 @@
 import { CardStyle, Container } from './styles';
 
 function Card({ data, onClick }) {
-
   const { nome, descricao } = data;
 
   const separateDescriptionPipe = (description) => {
     const descriptionLine = description.split('|');
-    const newLines = []
+    const newLines = [];
     descriptionLine.map((line) => {
       return newLines.push(<p key={line}>{line}</p>)
     });
     return <>{newLines}</>
   };
-
 
   return (
     <Container onClick={onClick}>
