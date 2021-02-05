@@ -30,6 +30,10 @@
 - [Redux Rocketseat Tutorial](https://www.youtube.com/watch?v=7L7MhxjI4PE&t=3s);
 - [React Documentation](https://pt-br.reactjs.org/);
 
+### Project Screens
+
+![Insomnia app listing all endpoints](https://ibb.co/74wppKZ)
+
 ### Notes
 
 I'd like to thank Wooza for this opportunity to face this challenge, my programming background was not easy because I risked everything to become a programmer. Now I see I'm improving a lot, so, even if I do not be chosen by you, I really appreciated the test, it has blown my mind working with redux, such a tool I was learning before. I'd like to thank Mariana Barata for being a receptive person through my recruitment in here. That's all guys, hope you enjoy! :)
