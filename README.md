@@ -30,9 +30,9 @@ I'd like to thank Wooza for this opportunity to face this challenge, my programm
 
 ### Tutorials and Documentations
 
-[Redux Documentation](https://redux.js.org/);
-[Redux Rocketseat Tutorial](https://www.youtube.com/watch?v=7L7MhxjI4PE&t=3s);
-[React Documentation](https://pt-br.reactjs.org/);
+- [Redux Documentation](https://redux.js.org/);
+- [Redux Rocketseat Tutorial](https://www.youtube.com/watch?v=7L7MhxjI4PE&t=3s);
+- [React Documentation](https://pt-br.reactjs.org/);
 
 ## License
 
