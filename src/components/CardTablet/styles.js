@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-export const CardStyle = styled.div`
-  p {
+export const CardTabletStyle = styled.div`
+p {
     color: #000;
     margin: 0px;
     font-size: 20px;
@@ -19,11 +19,12 @@ export const CardStyle = styled.div`
     color: #000;
   }
 `
+
 export const Container = styled.div`
   width: 225px;
   border-radius: 4px;
   box-shadow: 0px 3px 10px -5px rgba(0, 0, 0, 0.5);
-  background: #F6D55C;
+  background: #3CAEA3;
   margin: 20px;
   text-align: center;
   padding: 30px;

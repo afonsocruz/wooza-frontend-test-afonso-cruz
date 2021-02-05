@@ -1,17 +1,13 @@
 import { useState, useEffect } from 'react'
-
 import { useHistory } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 
 import Card from '../../components/Card';
 
+import { HomeStyle } from './styles';
 import { Wrapper, CardBackgroundArea } from '../../styles/globalStyle';
 
-import { useDispatch } from 'react-redux';
-
-import { HomeStyle } from './styles';
-
 import api from '../../api/api';
-
 
 function Home() {
 

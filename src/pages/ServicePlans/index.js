@@ -4,9 +4,11 @@ import { useHistory } from 'react-router-dom';
 import { Wrapper, CardBackgroundArea } from '../../styles/globalStyle';
 import api from '../../api/api';
 
-import CardPlan from '../../components/CardPlan';
+import CardTablet from '../../components/CardTablet';
 import CardPc from '../../components/CardPc';
-import CardWifi from '../../components/CardPc';
+import CardWifi from '../../components/CardWifi';
+
+import { ServicePlansStyle } from './styles';
 
 function ServicePlans() {
 
@@ -60,7 +62,7 @@ function ServicePlans() {
     switch (sku) {
       case 'TBT01':
         return (
-          <CardPlan
+          <CardTablet
             key={index}
             plano={plano}
             onClick={() => handlePickPlan(plano)}
@@ -87,8 +89,9 @@ function ServicePlans() {
   return (
     <Wrapper>
       <CardBackgroundArea>
-        <h2>Escolha um plano abaixo:</h2>
+       <ServicePlansStyle>
         {servicePlans.map(selectCard)}
+       </ServicePlansStyle>
       </CardBackgroundArea>
     </Wrapper>
   )

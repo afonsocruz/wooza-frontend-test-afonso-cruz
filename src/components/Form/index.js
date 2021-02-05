@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 
 import { useDispatch, useSelector } from 'react-redux';
 
+import { FormStyle } from './styles';
+
 function Form() {
   const [validForm, setValidForm] = useState(false);
 
@@ -64,26 +66,26 @@ function Form() {
   }, [validForm, order])
 
   return (
-    <>
+    <FormStyle>
       <form onSubmit={() => handleSubmit(event)}>
         <h4 htmlFor="nome" type="text">Nome:</h4>
-        <input name="nome"type="text" placeholder="nome" onChange={e => setName(e.target.value)}/>
+        <input name="nome"type="text" placeholder="Seu Nome" onChange={e => setName(e.target.value)}/>
 
-        <h4 htmlFor="email" type="text">Email:</h4>
-        <input name="email"type="text" placeholder="email"onChange={e => setEmail(e.target.value)}/>
+        <h4 htmlFor="email" type="text">E-mail:</h4>
+        <input name="email"type="text" placeholder="seunome@testfrontwooza.com.br"onChange={e => setEmail(e.target.value)}/>
 
-        <h4 htmlFor="nascimento" type="text">Nascimento:</h4>
-        <input name="nascimento"type="text" placeholder="nascimento"onChange={e => setBirth(e.target.value)}/>
+        <h4 htmlFor="nascimento" type="text">Data de nascimento:</h4>
+        <input name="nascimento"type="text" placeholder="02/02/2021"onChange={e => setBirth(e.target.value)}/>
 
-        <h4 htmlFor="cpf" type="text">cpf:</h4>
-        <input name="cpf"type="text" placeholder="cpf"onChange={e => setCpf(e.target.value)}/>
+        <h4 htmlFor="cpf" type="text">CPF:</h4>
+        <input name="cpf"type="text" placeholder="999.999.999-99"onChange={e => setCpf(e.target.value)}/>
 
-        <h4 htmlFor="telefone" type="text">telefone:</h4>
-        <input name="telefone"type="text" placeholder="telefone" onChange={e => setPhone(e.target.value)}/>
+        <h4 htmlFor="telefone" type="text">Telefone:</h4>
+        <input name="telefone"type="text" placeholder="(22)2222-2222" onChange={e => setPhone(e.target.value)}/>
 
         <button type="submit">Enviar</button>
       </form>
-    </>
+    </FormStyle>
   )
 }
 

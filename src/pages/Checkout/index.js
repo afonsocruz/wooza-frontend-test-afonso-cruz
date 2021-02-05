@@ -3,7 +3,7 @@ import React from 'react';
 import {useSelector} from 'react-redux';
 import {useHistory} from 'react-router-dom';
 
-import { Wrapper } from '../../styles/globalStyle';
+import { Wrapper, CardBackgroundArea } from '../../styles/globalStyle';
 
 import Form from '../../components/Form';
 
@@ -19,7 +19,9 @@ function Checkout() {
 
   return (
     <Wrapper>
-      <Form />
+      <CardBackgroundArea>
+       <Form />
+      </CardBackgroundArea>
     </Wrapper>
   );
 }

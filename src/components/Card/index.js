@@ -18,8 +18,10 @@ function Card({ data, onClick }) {
   return (
     <Container onClick={onClick}>
       <CardStyle>
-        <h4>{nome}</h4>
-        {separateDescriptionPipe(descricao)}
+        <div className="cardInfo">
+          <h4>{nome}</h4>
+          {separateDescriptionPipe(descricao)}
+        </div>
       </CardStyle>
     </Container>
   );
