@@ -34,6 +34,12 @@
 
 Listing endpoints
 ![plot](./src/assets/insomnia.PNG)
+Listing platforms
+![plot](./src/assets/firstscreen.PNG)
+Listing plans
+![plot](./src/assets/secondscreen.PNG)
+Listing form and response from console
+![plot](./src/assets/thirdscreen.PNG)
 
 ### Notes
 
