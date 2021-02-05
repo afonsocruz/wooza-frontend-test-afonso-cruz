@@ -20,6 +20,10 @@
 - [Yarn Download](https://yarnpkg.com/)
 - after downloading all dependencies, acess the project folder and run `yarn start` or `npm start` then go to http://localhost:3000.
 
+## Production Version / Deployed
+
+[SpeedUp](https://wooza-frontend-test-afonso-cruz.vercel.app/)
+
 ### Notes
 
 I'd like to thank Wooza for this opportunity to face this challenge, my programming background was not easy because I risked everything to become a programmer. Now I see I'm improving a lot, so, even if I do not be chosen by you, I really appreciated the test, it has blown my mind working with redux, such a tool I was learning before. I'd like to thank Mariana Barata for being a receptive person through my recruitment in here. That's all guys, hope you enjoy! :)
